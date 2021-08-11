@@ -1,0 +1,12 @@
+How to push code to github:-
+Git init            # initliasize local directory has a git repositry
+
+Git  add .         # adding the files in ur new local repositry
+
+Git status    
+
+git commit -m "python first commit"                          #commit the files from local repositry
+
+git remote add origin git@github.com:Naresh984/Python.git
+
+git push -u origin master

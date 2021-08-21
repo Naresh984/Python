@@ -113,8 +113,8 @@ corey-321-schafer@my-work.net
 '''
 print('#emails -- practice:-')
 
-pattern5=re.compile(r'()')
-matchees5 = pattern5.finditer(text_to_search)
+pattern5=re.compile(r'[a-zA-Z]+@[a-zA-Z]+[-.]com')
+matchees5 = pattern5.finditer(emails)
 
 for match5 in matchees5:
     print(match5)

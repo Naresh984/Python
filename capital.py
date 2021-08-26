@@ -1,6 +1,6 @@
 
 #this is new edit to test gidfsadjfksajkdfjaskjdfkasjdfkjkajsdft
-msg='kidmanspasswordissostrange'
+msg='kidmanspa sswordisso strange'
 print(msg.upper())
 msg1=msg
 print(msg1.replace(" ",""))

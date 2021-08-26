@@ -1,17 +1,17 @@
 message='hello world'                           
-# print(message) 
+print(message) 
 
-# #quotes problem
+#quotes problem
 
-# message1="harry's world"
-# print(message1)
+message1="harry's world"
+print(message1)
 
-# message3='harry\'s world' #giving backslash , python will know that it close the string
-# print(message3)
+message3='harry\'s world' #giving backslash , python will know that it close the string
+print(message3)
 
-# #mutiple lines
-# message4=''' harry's world was very famous in early 20's '''
-# print(message4)
+#mutiple lines
+message4=''' harry's world was very famous in early 20's '''
+print(message4)
 
 # #
 # print(len(message)) #prints the len of string
@@ -104,7 +104,7 @@ message='hello world'
 # sentence = 'Pi is equal to {:.2f}'.format(pi)# to get upto two decimal places or .3f for three decimal places
 # print(sentence)
 
-# sentence='1 MB is equal to {:,.2f} bytes'.format(1000**2)# v added a comma to separte it and also giving two decimals places
+# sentence='1 MB is equal to {:,.2f} bytes'.format(1000**2)# v added a comma to separte it and also giving two decimals places.
 # print(sentence)
 
 # import datetime
@@ -118,15 +118,15 @@ message='hello world'
 # sentence = '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)
 # print(sentence)
 
-# #dir function
+# dir function
 
 # greeting='Hello'
 # name='jughead'
 # #reference
-# #print(dir(name))
-# #to get help 
-# #print(help(str))#to more what all v can use in string
-# #print(help(str.lower))
+# print(dir(name))
+# # to get help 
+# print(help(str))#to more what all v can use in string
+# print(help(str.lower))
 
 
 

@@ -7,7 +7,7 @@ Git status
 
 git commit -m "python first commit"                          #commit the files from local repositry
 
-git remote add origin git@github.com:Naresh984/Python.git
+git remote add origin git@github.com:Naresh984/Python.git //butfirst create repo  in git
 
 git push -u origin master
 

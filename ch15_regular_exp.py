@@ -4,7 +4,7 @@ import re
 # raw strings:-
 # print('\ttab') #execute to know the difference 
 # print(r'\ttab')
-
+#findall returns just the matches while finditer returns the groups
 text_to_search = '''
 abcdefghijklmnopqurtuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -61,9 +61,10 @@ print(text_to_search[1:5])
 # Quantifiers:
 # *       - 0 or More
 # +       - 1 or More
-# ?       - 0 or One
+# ?       - 0 or One     --is like optional
 # {3}     - Exact Number                       -- pattern = re.compile(r'\d{3}.\d{3}.\d{4}')
 # {3,4}   - Range of Numbers (Minimum, Maximum)
+#print(match.group(0)) -0 means full
 
 
 # #### Sample Regexs ####
@@ -117,6 +118,32 @@ pattern5 = re.compile(r'[a-zA-Z0-9-.]+@[a-zA-Z-]+\.(com|edu|net)')
 matchees5 = pattern5.finditer(emails)
 
 for match5 in matchees5:
-    print(match5)
+    print(match5.group(0))
 
-print('new update')
+
+print('#urls ')
+urls = '''
+https://www.google.com
+http://coreyms.com
+https://youtube.com
+https://www.nasa.gov
+'''
+
+pattern6=re.compile(r'https?://(www\.)?(\w+)(\.\w+)') # here v made groups using paranthesis
+# matchees6=pattern6.finditer(urls) # first method
+subbed_urls= pattern6.sub(r'\2\3', urls) # 2nd method
+print(subbed_urls)
+# for match6 in matchees6:
+#     print(match6.group(3))   # using groups
+
+
+#Search a word
+#using flagS to igonre the capital or not
+
+sentence='hello google how are you doing today'
+
+pattern7=re.compile(r'HEllo', re.IGNORECASE)
+matchees7=pattern7.search(sentence)
+
+print(matchees7)
+

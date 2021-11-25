@@ -1,4 +1,12 @@
+Before pushing the code to repo u need to have valid access/permissions:-
+so u need to generate a ssh key 
+step1:-ssh-keygen
+step2:-copy the public key path and then copy the content of that path.
+step3:-go to ssh & gpg keys in settings of github and paste it there.
+
+
 How to push code to github:-
+
 Git init            # initliasize local directory has a git repositry
 
 Git  add .         # adding the files in ur new local repositry
